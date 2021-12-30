@@ -11,11 +11,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 
 
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
 
         </head>
 
         <body style="background-color: #f7f9fc;">
-          <div style="margin-top: 20px;"></div>
+   
+  
+      
 
           <div class="container">
               <div class="wrap" style="width: 100%;">
@@ -27,14 +34,15 @@
                     <p>초보 개발자</p>
                     <p>010-3928-9747</p>
                  </div>
+                
                  <div class="box-wrap">
-                  <div class="index-box"> 
+                  <div class="index-box" style="text-align: center;"> 
                     <p>나이</p> 
                     <p>대학교</p>
                     <p>전공</p>
                     <p>사는 지역</p>
                   </div> 
-                  <div class="index-box" style="text-align: center;">
+                  <div class="index-box" style="text-align: left;">
                     <p>1994년생</p>
                     <p>계명 대학교</p>
                     <p>컴퓨터 공학</p>
@@ -45,44 +53,201 @@
                
                       
                   
-           <div style="width: 100%; display: flex; justify-content:space-between">
-
-            <div class="wrap" style="width: 38%;">
-              <div class="skill"style="width:100%; padding: 20px;">
-                <h3>경험 기술</h3>
-                <p>HTML / CSS</p>
-                <p>Javascript / Jquery</p>
-                <p>Node.js / ejs / Mongodb</p>
-                <p>Spring / jsp / mysql</p>
-                <p>ajax / axios</p>
-              </div>
-              </div>
-             
-
-              <div class="wrap" style="width: 60%;">
+          
+            <div style="width: 100%; display:flex; justify-content:space-between">
+              <div class="wrap" style="width: 65%;">
                 <div style="width:100%; padding: 20px;">
-                <h3>결과물</h3>
-                <h2>1. </h2>
-                <p>쇼핑몰 데모 개발 - <a href="http://gsbyo.shop/home">http://gsbyo.shop/home</a> </p>
-                <p>코드 - <a href="https://github.com/gsbyo/shop">https://github.com/gsbyo/shop</a></p>
-                <p>적용 기술 Node.js - ejs - Mongodb</p>
-                <p>현재 서버의 경우 네이버클라우드를 이용(Linux)</p>
-                <p>테스트용 로그인 계정 test / test</p>
-                 
-                <h2>2. </h2>
-                <P>간단한 CRUD 테스트</P>
-                <p>코드 - <a href="https://github.com/gsbyo/Project.spring/tree/main/src/main/java/com/todo/demo/test">github.com/gsbyo/Project.spring/tree/main/src/main/java/com/todo/demo/test</a></p>
-                <p>TestContoller / TestVo / TestMapper / TestService </p>
-                <p>적용 기술 Spring / jsp / mysql</p>
-               
+                  <h2>소개</h2>
+                 <p style="line-height: 25px;">백엔드 개발자를 지향하고 있는 기승범 입니다. 아무것도 모르지만 알려고 하는 의지와 학습의 자세는 준비가 
+                   되어있습니다. 스스로의 장점으로는 풀기 어려운 문제를 만났을 때 끝까지 풀려고 하는 호기심과 끈기를 가지고 있으며,
+                   최근 웹개발을 공부하면서 이러한 장점으로 어느정도 결과를 만들었다고 생각하고 있습니다. 단점으로는 낯을 가려서 팀원 과의 
+                   의사소통이 잘 이루어지지 않을 수 있으나 주위 사람들에게는 말을 많이 하는 편이기 때문에 팀원과 적응해 나간다면 무리없이 잘해나갈수 있다고
+                   생각합니다. 
+                 </p>
               </div>
 
               </div>
+            
+              
+              
+              
+              <div class="wrap" style="width: 30%;"> 
+                <div style="width:100%; padding: 20px;">
+                 <h2>경험 기술</h2>
+                <p>Spring / mysql / jsp
+                <p>Node.js / Mongodb / ejs</p>
+                <p>html, css </p>
+                <p>javascipt, juqery </p>
+                <p>ajax, axios</p>
               </div>
+              </div>
+                
+          
+  
+            </div>
+    
+            
+              
+          
+             <div style="width: 100%; display:flex; flex-wrap: wrap; justify-content:space-between">
+              <h2 style="width: 100%;">프로젝트</h2>
+              <div class="wrap" style="width: 49%; flex-wrap: wrap;"> 
+                <div style="height: 10%;">
+                <h2 style="padding-left: 10px;">결과물 1.</h2>
+              </div>
+                <div class="result-img-box">
+                <img src="./img/리뷰등록.JPG">
+                <img src="./img/주문관리.JPG">
+                <img src="./img/상품관리.JPG">
+                <img src="./img/결제페이지.JPG">
+                <img src="./img/상세페이지.JPG">
+              </div>
+                
+             </div>
+              
+                <div class="wrap" style="width: 49%;">
+                  <div style="width:100%; padding: 20px;">
+                   <p>Node.js / ejs / Mongodb 를 사용하여 만든 데모 쇼핑몰 입니다.</p>
+                   <p>리뷰 등록 - 임의의 상품에 상품을 등록 할 수 있습니다.</p>
+                   <p style="font-size: 13px; opacity: 0.75;">* 등록 된 상품의 _id 기준으로 상위 4개에만 리뷰를 등록하여 상세페이지에서 
+                     확인 가능합니다.</p>
+                   <p>주문 관리 - 결제가 완료 된 상품의 운송장을 등록 할 수 있습니다.</p>  
+                   <p>상품 관리 - 상품을 등록하거나 수정 삭제를 할 수 있습니다.</p>
+                   <p>My Page - 자신의 구매내역을 확인 할 수 있습니다..</p>
+                   <p style="font-size: 13px; opacity: 0.75;">* 운송장이 입력 된 주문의 경우 배송 추적이 가능하며, 
+                    API로는 스마트택배를 사용하고 있습니다.</p>
+                   <p>상품 클릭 시에는 상세페이지로 이동하여 상품을 구매 할 수 있으며, 결제의 경우 구매 클릭 시에 DB에 결제 정보가 저장되며
+                     결제시에는 구매 클릭 시의 DB 데이터를 조회하여 업데이트를 하고 있습니다. 
+                   </p>
+                   <p>상품 구매 페이지에서 결제하기 / 결제완료 버튼 2개가 존재 하는데 결제하기의 경우 가상계좌를 통한 아임포트 API 사용하며, 
+                     이 경우는 현재 결제 진행 상태가 완료가 되지 않습니다. 결제완료의 경우는 강제적으로 결제를 완료로 처리합니다. </p>
+                     <p>서버의 경우 네이버클라우드(우분투)를 사용하고 있습니다.</p>
+                     <p>페이지 주소 - <a href="http://www.gsbyo.shop/home">gsbyo.shop/home</a></p>
+                     <p>코드 - <a href="https://github.com/gsbyo/shop">github link</a></p>
+                     <p>현재 에러 수정 중</p>
+                </div>
+  
+                </div>
+              
+  
+            </div>
 
-
-
+            <div style="width: 100%; display:flex; justify-content:space-between" >
+              <div class="wrap" style="width: 49%; flex-wrap: wrap;"> 
+                <div style="height: 20%;">
+                <h2 style="padding-left: 10px;">결과물 2.</h2>
+              </div>
+                <div class="result-img-box">
+                <img src="./img/할일 추가.JPG">
+                <img src="./img/할일 수정.JPG">
+                <img src="./img/할일 삭제.JPG">
+              </div>
+                
+             </div>
+              
+                <div class="wrap" style="width: 49%;">
+                  <div style="width:100%; padding: 20px;">
+                    <p>Spring / jsp / mysql 사용한 간단한 CRUD 테스트 입니다.</p>
+                    <p>텍스트 박스 날짜와 할 일을 입력하여 나타내고 있습니다.</p>
+                    <p>X 버튼을 클릭 시 삭제가 되며, 수정하고 싶은 박스를 누르면 입력 박스에 
+                      해당되는 데이터가 입력되며, 수정을 할 수 있습니다.
+                    </p>
+                    <p>코드 - <a href="https://github.com/gsbyo/Project.spring">github link</a></p>
+                    <p>TestController / TestVo / TestMapper / TestService</p>
+                </div>
+  
+                </div>
+            
+   
+            </div>
           </div>
 
-        </body>
-      </html>
+          <div class="img-view">
+            <button id="prev-button">이전</button>
+            <button id="next-button">다음</button>
+            <button id="cancel">X</button>
+            <div class="view-img-wrap">
+            
+
+              
+            </div>
+           
+            
+          
+          </div>
+
+
+       
+<script>
+
+var img_width = 800;
+  var pos = 1;
+  var img_len;
+ 
+
+  $('.result-img-box').on('click', function () {
+    var img = $(this).children('img').get();
+    img_len = img.length;
+    console.log(img_len);
+  
+    var width;
+    var height = $(document).height();
+  
+
+    
+    console.log(img[0]);
+    
+
+    img.forEach(element => {
+      $('.view-img-wrap').append(`
+         <div class="view-img-box">
+         <img src="${element.src}">
+         </div>
+        `)
+    });
+
+
+    //애니메이션 효과
+    $('.img-view').show();
+    $('.view-img-wrap').show();
+  })
+
+
+
+
+   $('#prev-button').on('click',function(){
+     if(pos != 1){
+      silde_move(-img_width * (pos-2));
+      pos--;
+     }
+   })
+
+   $('#next-button').on('click',function(){
+     if(pos != img_len){
+      silde_move(-img_width * pos);
+      ++pos;
+      console.log(pos);
+     }
+     
+   })
+
+   $('#cancel').on('click',function(){
+    $('.img-view').hide();
+    $('.view-img-wrap').hide();
+    $('.view-img-wrap').children().remove();
+    pos = 1; 
+    silde_move(0);
+    
+   })
+
+   function silde_move(px){
+    $('.view-img-box').css('transform','translateX('+px+'px)');
+   }
+
+
+
+</script>
+
+</body>
+
+</html>

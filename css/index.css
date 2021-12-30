@@ -2,6 +2,12 @@ body{
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+.top{
+    width: 100%;
+    height: 100px;
+    background-color:deepskyblue;
+}
+
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -30,14 +36,14 @@ body{
 .img-box img{
     width: 100%;
     height: 100%;
+    padding: 10px;
 }
 
 .text-box{
     margin-top: 10px;
     text-align: left;
-    width: 20%;
-    margin-top: 30px;
-
+    width: 30%;
+    
 }
 
 .text-box * {
@@ -45,10 +51,11 @@ body{
 }
 
 .box-wrap{
-    width: 50%;
+    width: 40%;
     display: flex;
- 
+
 }
+
 
 .index-box{
     width: 50%;
@@ -56,16 +63,88 @@ body{
     display: flex;
     flex-wrap: wrap;
     text-align: right;
- 
+    line-height: 5px;
 }
+
+
 
 .index-box p{
     width: 100%;
     padding: 10px;
+    
 }
 
-.skill *{
-    padding: 20px;
+
+.skill-box{
+    padding: 10px;
+    
+   
+}
+
+
+
+.result-img-box{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.result-img-box img{
+    width: 25%;
+    height: 150px;
+    padding: 10px;
+}
+
+.img-view{
+  display:none;
+  position:fixed; 
+  width:100%; height:100%;
+  top:0; left:0; 
+  background:rgba(0,0,0,0.3);
+}
+
+.view-img-wrap{ 
+    display: flex;  
+    position:fixed;
+    top:50%; left:50%;
+    width: 800px;
+    width: 800px;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    overflow: hidden;
+    
+}
+.view-img-box{
+    width: 4000px;
+    height: 800px;
+}
+
+.view-img-box img{
+    width: 800px;
+    height: 800px;
+}
+
+#prev-button{
+    position:fixed;
+    top:50%; left:22%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+
+#next-button{
+    position:fixed;
+    top:50%; left:78%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+
+#cancel{
+    position:fixed;
+    top:13%; left:77%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
 }
 
 
