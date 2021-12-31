@@ -13,6 +13,7 @@ body{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 
@@ -108,12 +109,14 @@ body{
 .view-img-wrap{ 
     display: flex;  
     position:fixed;
+    width: 100%;
+    height: 80%;
     top:50%; left:50%;
-    width: 800px;
     width: 800px;
     transform: translate(-50%,-50%);
     background:#fff;
     overflow: hidden;
+    
     
 }
 .view-img-box{
@@ -126,26 +129,18 @@ body{
     height: 800px;
 }
 
-#prev-button{
-    position:fixed;
-    top:50%; left:22%;
-    transform: translate(-50%,-50%);
-    padding: 10px;
+
+.button-box{
+    width: 100%;
+    height: 20%;
+   
+    position: relative;
+    margin-top: 70px
+
+    
 }
 
-#next-button{
-    position:fixed;
-    top:50%; left:78%;
-    transform: translate(-50%,-50%);
-    padding: 10px;
-}
 
-#cancel{
-    position:fixed;
-    top:13%; left:77%;
-    transform: translate(-50%,-50%);
-    font-size: 20px;
-}
 
 
 

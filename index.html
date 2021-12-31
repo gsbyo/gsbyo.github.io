@@ -104,23 +104,23 @@
                 <div class="wrap" style="width: 49%;">
                   <div style="width:100%; padding: 20px;">
                    <p>Node.js / ejs / Mongodb 를 사용하여 만든 데모 쇼핑몰 입니다.</p>
-                   <p>리뷰 등록 - 임의의 상품을 등록 할 수 있습니다.</p>
+                   <p>상품 관리 - 상품을 등록하거나 수정 삭제를 할 수 있습니다.</p>
+                   <p>리뷰 등록 - 임의의 상품의 리뷰를 등록 할 수 있습니다.</p>
                    <p style="font-size: 13px; opacity: 0.75;">* 등록 된 상품의 _id 기준으로 상위 4개에만 리뷰를 등록하여 상세페이지에서 
                      확인 가능합니다.</p>
                    <p>주문 관리 - 결제가 완료 된 상품의 운송장을 등록 할 수 있습니다.</p>  
-                   <p>상품 관리 - 상품을 등록하거나 수정 삭제를 할 수 있습니다.</p>
-                   <p>My Page - 자신의 구매내역을 확인 할 수 있습니다..</p>
+                   <p>My Page - 자신의 구매내역을 확인 할 수 있습니다. 결제와 배송 여부에 따라서 주문한 물품의 상태를 확인 할 수 있습니다.</p>
                    <p style="font-size: 13px; opacity: 0.75;">* 운송장이 입력 된 주문의 경우 배송 추적이 가능하며, 
                     API로는 스마트택배를 사용하고 있습니다.</p>
                    <p>상품 클릭 시에는 상세페이지로 이동하여 상품을 구매 할 수 있으며, 결제의 경우 구매 클릭 시에 DB에 결제 정보가 저장되며
                      결제시에는 구매 클릭 시의 DB 데이터를 조회하여 업데이트를 하고 있습니다. 
                    </p>
                    <p>상품 구매 페이지에서 결제하기 / 결제완료 버튼 2개가 존재 하는데 결제하기의 경우 가상계좌를 통한 아임포트 API 사용하며, 
-                     이 경우는 현재 결제 진행 상태가 완료가 되지 않습니다. 결제완료의 경우는 강제적으로 결제를 완료로 처리합니다. </p>
+                     이 경우는 현재 결제 진행 상태가 완료가 되지 않고 입금 전 상태로 처리 됩니다. 결제완료의 경우는 강제적으로 결제를 완료로 처리합니다. </p>
                      <p>서버의 경우 네이버클라우드(우분투)를 사용하고 있습니다.</p>
                      <p>페이지 주소 - <a href="http://www.gsbyo.shop/home">gsbyo.shop/home</a></p>
                      <p>코드 - <a href="https://github.com/gsbyo/shop">github link</a></p>
-                     <p>현재 에러 수정 중</p>
+                     <p>테스트 계정 test /  test</p>
                 </div>
   
                 </div>
@@ -159,11 +159,15 @@
           </div>
 
           <div class="img-view">
+            <div class="container" style="height: 1000px; text-align: center;">
+            <div class="button-box">
             <button id="prev-button">이전</button>
             <button id="next-button">다음</button>
-            <button id="cancel">X</button>
+            <button id="cancel">취소</button>
+            </div>
             <div class="view-img-wrap">
             </div>
+          </div>
           </div>
         
 
@@ -197,10 +201,10 @@ var img_width = 800;
         `)
     });
 
-
-    //애니메이션 효과
     $('.img-view').show();
     $('.view-img-wrap').show();
+
+    
   })
 
 
