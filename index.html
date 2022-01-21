@@ -196,17 +196,22 @@
           </div>
 
           <div class="img-view">
-            <div class="container" style="height: 70%; text-align: center;">
-            <div class="view-img-wrap">
-              
-            </div>
-            <div class="button-box">
-              <button id="prev-button">이전</button>
-              <button id="next-button">다음</button>
-              <button id="cancel">취소</button>
+            <div class="pop">
+              <div class="button-box">
+                <button id="prev-button">이전</button>
+                <button id="next-button">다음</button>
+                <button id="cancel">취소</button>
               </div>
+            <div class="view-img-wrap">
+          
+           
+            </div>
+          
+   
+            </div>
           </div>
-          </div>
+           
+        
         
 
         </body>
@@ -275,6 +280,8 @@ var img_width = 800;
 
    function silde_move(px){
     $('.view-img-box').css('transform','translateX('+px+'px)');
+   
+    
    }
 
 

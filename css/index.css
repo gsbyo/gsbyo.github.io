@@ -112,14 +112,13 @@ body{
 
 .view-img-wrap{ 
     display: flex;  
-    position:fixed;
-    width: 100%;
-    height: 80%;
-    top:50%; left:50%;
     width: 800px;
-    transform: translate(-50%,-50%);
+    height: 90%;
     background:#fff;
     overflow: hidden;
+    border:1px solid black;
+
+    
     
     
 }
@@ -133,15 +132,21 @@ body{
     height: 100%;
 }
 
-
 .button-box{
     width: 100%;
-    height: 20%;
-   
-    position: relative;
-    margin-top: 70px
+    height:10%;
+    text-align: center;
+}
 
-    
+.button-box button{
+    margin-top: 70px;
+}
+.pop{
+    position:fixed;  
+    height:1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 
