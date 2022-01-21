@@ -130,38 +130,45 @@
   
             </div>
 
-            <div style="width: 100%; display:flex; justify-content:space-between" >
+            <div style="width: 100%; display:flex; flex-wrap: wrap; justify-content:space-between">
+              <h2 style="width: 100%;">프로젝트</h2>
               <div class="wrap" style="width: 49%; flex-wrap: wrap;"> 
-                <div style="height: 20%;">
-                <h2 style="padding-left: 10px;">결과물 2.</h2>
+                <div style="height: 10%;">
+                <h2 style="padding-left: 10px;">결과물 1.</h2>
               </div>
                 <div class="result-img-box">
-                <img src="./img/할일 추가.JPG">
-                <img src="./img/할일 수정.JPG">
-                <img src="./img/할일 삭제.JPG">
+                  <img src="./img/메인.JPG">
+                  <img src="./img/회원.JPG">
+                  <img src="./img/결제.JPG">
+                  <img src="./img/회원권.JPG">
+                  <img src="./img/정산.JPG">
               </div>
                 
              </div>
               
                 <div class="wrap" style="width: 49%;">
                   <div style="width:100%; padding: 20px;">
-                    <p>SpringBoot / jsp / mysql 사용한 간단한 CRUD 테스트 입니다.</p>
-                    <p>텍스트 박스 날짜와 할 일을 입력하여 나타내고 있습니다.</p>
-                    <p>X 버튼을 클릭 시 삭제가 되며, 수정하고 싶은 박스를 누르면 입력 박스에 
-                      해당되는 데이터가 입력되며, 수정을 할 수 있습니다.
-                    </p>
-                    <p>코드 - <a href="https://github.com/gsbyo/Project.spring">github link</a></p>
-                    <p>TestController / TestVo / TestMapper / TestService</p>
+                    <p>SpringBoot / jpa / mysql 사용한 회원 관리 프로그램 입니다.</p>
+                    <p>회원을 등록하거나 수정 / 삭제를 할 수 있습니다.</p>
+                    <p>해당 회원에 대하여 등록된 회원권을 결제 할 수 있습니다.</p>
+                    <p>검색 된 회원을 클릭 시 결제 내역을 알 수 있으며 결제내역을 취소하거나 환불을 할 수 있습니다.</p>
+                    <p style="font-size: 13px; opacity: 0.75;">* 환불의 경우 해당 결제의 만료일이 당일로 변경되며 환불 Entity가 생성됩니다. </p>
+                    <p>회원권을 등록 할 수 있습니다.</p>
+                    <p>결제 내역과 환불 내역을 추출하여 정산된 결과를 볼 수 있습니다. </p>
+                    <p style="font-size: 13px; opacity: 0.75;">* 월(month)에 해당되는 데이터가 없는 경우 0으로 산출됩니다.</p>
+                    <p>코드 - <a href="https://github.com/gsbyo/jpaTest">github link</a></p>
+                 
                 </div>
   
                 </div>
-            
-   
+              
+  
             </div>
+
 
             <div style="width: 100%; display:flex; justify-content:space-between" >
               <div class="wrap" style="width: 49%; flex-wrap: wrap;"> 
-                <div style="height: 20%;">
+                <div style="height: 10%;">
                 <h2 style="padding-left: 10px;">결과물 3.</h2>
               </div>
                 <div class="result-img-box">
@@ -174,7 +181,7 @@
               
                 <div class="wrap" style="width: 49%;">
                   <div style="width:100%; padding: 20px;">
-                    <p>SpringBoot / jsp / mysql 사용한 간단한 CRUD 테스트 입니다.</p>
+                    <p>SpringBoot / mybatis / mysql 사용한 간단한 CRUD 테스트 입니다.</p>
                     <p>텍스트 박스 날짜와 할 일을 입력하여 나타내고 있습니다.</p>
                     <p>X 버튼을 클릭 시 삭제가 되며, 수정하고 싶은 박스를 누르면 입력 박스에 
                       해당되는 데이터가 입력되며, 수정을 할 수 있습니다.
@@ -190,14 +197,15 @@
           </div>
 
           <div class="img-view">
-            <div class="container" style="height: 1000px; text-align: center;">
-            <div class="button-box">
-            <button id="prev-button">이전</button>
-            <button id="next-button">다음</button>
-            <button id="cancel">취소</button>
-            </div>
+            <div class="container" style="height: 70%; text-align: center;">
             <div class="view-img-wrap">
+              
             </div>
+            <div class="button-box">
+              <button id="prev-button">이전</button>
+              <button id="next-button">다음</button>
+              <button id="cancel">취소</button>
+              </div>
           </div>
           </div>
         

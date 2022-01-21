@@ -125,12 +125,12 @@ body{
 }
 .view-img-box{
     width: 4000px;
-    height: 800px;
+    height: 100%;
 }
 
 .view-img-box img{
     width: 800px;
-    height: 800px;
+    height: 100%;
 }
 
 
