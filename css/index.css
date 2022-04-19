@@ -6,10 +6,8 @@
 html{
     overflow-x:hidden;
 }
-
 body{
     font-family: 'Gothic A1','Nanum Myeongjo','Oswald', sans-serif;
-    width:100%;
     overflow-x:hidden;
 }
 
@@ -34,8 +32,9 @@ ul{
 
 
 #font-menu{
-    width:100%;
+    width: 100%;
 }
+
 
 #font-menu li{
   display: inline-block;
@@ -101,13 +100,20 @@ ul{
 
 
 #produce{
+    width: 100%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    margin: 0 auto;
     position: absolute;
     color: white;
     font-size: 20px;
     text-align: center;
-    top:50%;
-    left: 50%;
-    transform: translate( -50%, 450% );
+    bottom: 50px;
+}
+
+#produce div{
+    text-align: center;
 }
 
 #title-container img{
@@ -205,27 +211,25 @@ ul{
     box-shadow: 0.5px 0.5px 2px 1px #eee;
 }
 
-.img-box{
+.mySwiper{
    width: 50%;
    height: 100%;
+   position: relative;
 }
 
-.slider-div{
-   width: 100%;
-   height: 100%;
+.swiper-wrapper div{
+    width: 100%;
 }
 
-.slider-div div{
-   width: 100%;
-   height: 100%;
-   text-align: center;
-}
-
-.slider-div div img{
-  
-    width: 500px;
+.swiper-wrapper div img{
+    width: 100%;
     height: 600px;
-  
+    padding: 15px;
+}
+
+.swiper-pagination{
+
+   font-weight: bold;
 }
 
 .more-box{
@@ -234,40 +238,41 @@ ul{
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-right: 10px;
+   margin-left: 20px;
 }
 
 
 
-.slick-prev{
-   border: 0;
-   padding: 10px;
-   font-weight: bold;
-   font-size: 30px;
-   background-color: transparent;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   margin-left:-200px;
-   z-index: 99;
-   
+.slick-dots li.slick-active button {
+    background-color: #E2E2E2;
+}   
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 40px;
+ 
 }
 
-.slick-next{
-    border: 0ch;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-left:200px;
-    
+.swiper-button-next > a,
+.swiper-button-prev > a
+{
+    display: none;
 }
 
+
+.mySwiper:hover .swiper-button-next > a{
+    display: flex;
+}
+
+.mySwiper:hover .swiper-button-prev > a{
+    display: flex;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
 
 #career-container{
     width: 100%;
@@ -301,18 +306,9 @@ ul{
         display: none;
     }
 
-    .slick-next{
-        margin-left: 200px;
-    }
-
-    .slick-prev{
-        margin-left: -200px;
-    }
-
   
 
 
-    
 }
 
 
@@ -331,13 +327,7 @@ ul{
     #font-menu{
         display: none;
     }
-    .slick-next{
-        margin-left: 200px;
-    }
-
-    .slick-prev{
-        margin-left: -200px;
-    }
+    
 }
 
 @media (max-width:1200px){
@@ -352,7 +342,7 @@ ul{
         flex-direction: column;
     }
 
-    .img-box{
+    .mySwiper{
         width: 100%;
         height: 50%;
     }
@@ -370,18 +360,8 @@ ul{
         width: 100%;
     }
 
-    .slider-div div img{
-        width: 100%;
-    }
-    .slick-next{
-        margin-left: 400px;
-    }
+ 
 
-    .slick-prev{
-        margin-left: -400px;
-    }
-    
-    
     .skill-box{
         width: 100%;
     }
@@ -402,9 +382,9 @@ ul{
 
     #three{
         display: inline-block;
-        font-size: 40px;
-        width:200px;
+        font-size: 35px;
     }
+
 
     #text-menu{
         display: none;
@@ -414,13 +394,9 @@ ul{
         display: block;
     }
 
-    .slick-next{
-        margin-left: 200px;
-    }
+  
 
-    .slick-prev{
-        margin-left: -200px;
-    }
+
 
   
 }
@@ -451,7 +427,8 @@ ul{
         font-size: 13px;
         width: 100%;
     }
-        
+
+  
 
 }
 
