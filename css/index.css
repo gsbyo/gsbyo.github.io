@@ -3,6 +3,10 @@
     padding: 0
 }
 
+html{
+    overflow-x:hidden;
+}
+
 body{
     font-family: 'Gothic A1','Nanum Myeongjo','Oswald', sans-serif;
     width:100%;
