@@ -232,77 +232,76 @@
         </div>
 
 
-        <script>
-     
-         $(function(){
-                $('.slider-div').slick({
-                    prevArrow: "<button type='button' class='slick-prev'>&#10094</button>",        // 이전 화살표 모양 설정
-                    nextArrow: "<button type='button' class='slick-next'>&#10095</button>",        // 다음 화살표 모양 설정
-                    draggable: true,     //드래그 가능 여부 
-                    slidesToShow: 1,
-                    responsive: [ // 반응형 웹 구현 옵션
-                        {
-                            breakpoint: 960, //화면 사이즈 960px
-                            settings: {
-                              
-                            
-                            }
-                
-                            
-                        },
-                    ]
+      <script>
 
-                });
-            });
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: 'fraction',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 
 
-            $(window).scroll(function(){
-              var sHeight = $(document).scrollTop();
-               if(sHeight > 0){
-                $('#top-menu').css('background-color','black');
-                $('#sub-menu').children('li').css('background-color','black');  
-               }else{
-                $('#top-menu').css('background-color','');  
-                $('#sub-menu').children('li').css('background-color','');  
-               }
-              
-            });
-                
-
-            $('.about-li').on('click',function(){
-            
-                $('html, body').animate({
-                  scrollTop: $('#about-container').offset().top
-                }, 'slow');
-
-            });
-
-         
-
-            $('.skill-li').on('click',function(){
-                $('html, body').animate({
-                  scrollTop: $('#skill-container').offset().top
-                }, 'slow');
-            })
-            
-
-            $('.project-li').on('click',function(){
-                $('html, body').animate({
-                  scrollTop: $('#project-container').offset().top
-                }, 'slow');
-            })
-            
-            $('.career-li').on('click',function(){
-                $('html, body').animate({
-                  scrollTop: $('#career-container').offset().top
-                }, 'slow');
-            })
-            
-            
 
 
-        </script>
 
-    
-    </body>
+    $(window).scroll(function () {
+        var sHeight = $(document).scrollTop();
+        if (sHeight > 0) {
+            $('#top-menu').css('background-color', 'black');
+            $('#sub-menu').children('li').css('background-color', 'black');
+        } else {
+            $('#top-menu').css('background-color', '');
+            $('#sub-menu').children('li').css('background-color', '');
+        }
+
+    });
+
+
+    $('.about-li').on('click', function () {
+
+        $('html, body').animate({
+            scrollTop: $('#about-container').offset().top
+        }, 'slow');
+
+    });
+
+    $('.skill-li').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#skill-container').offset().top
+        }, 'slow');
+    })
+
+
+    $('.project-li').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#project-container').offset().top
+        }, 'slow');
+    })
+
+    $('.career-li').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#career-container').offset().top
+        }, 'slow');
+    })
+
+
+
+
+</script>
+
+
+</body>
+
 </html>
