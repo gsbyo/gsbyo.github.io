@@ -45,27 +45,29 @@ li{
 }
 
 #sub-menu{
-    margin-top:250px;
+    display: block;
    
 }
 
 #sub-menu li{
+	width:100px;
+	position:relative;
     padding: 10px;
-    
+
 }
 
 #font-menu ul{
     display: none;
-
+    
   }
 
 
 #top-menu li{
     list-style: none;
-    display:inline-block;
-    margin-right: 20px;
     font-size: 25px;
     font-family: 'Oswald';
+    display: inline-block;
+    margin-right: 20px;
 }
 
 
@@ -81,12 +83,10 @@ li{
 #top-menu{
     width: 100%;
     height: 80px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     position: fixed;
     z-index: 9999;
-    color: white;
+    color: white; 
+    line-height: 80px;
 
 }
 
@@ -179,7 +179,6 @@ li{
 
 .skill-box{
     width: 400px;
-    height: 300px;
     background-color: white;
     text-align: center;
     border-radius: 4px;
@@ -373,8 +372,8 @@ li{
     }
 }
 
-#font-menu li:hover #sub-menu{
-    display: inline-block;
+#font-menu:hover #sub-menu{
+    display: block;
 }
 
 @media (max-width: 1023px){
@@ -399,6 +398,7 @@ li{
     #font-menu{
         display: block;
     }
+
 
   
 
@@ -434,8 +434,14 @@ li{
         width: 100%;
     }
 
-  
+    .swiper-button-next{
+        display: none;
+    }
+    
+    .swiper-button-prev{
+        display: none;
+    }
+
 
 }
-
 
