@@ -402,7 +402,8 @@ ul{
 
     #three{
         display: inline-block;
-        font-size: 35px;
+        font-size: 40px;
+        width:200px;
     }
 
     #text-menu{
