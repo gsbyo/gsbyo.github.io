@@ -29,6 +29,10 @@ ul{
 }
 
 
+#font-menu{
+    width:100%;
+}
+
 #font-menu li{
   display: inline-block;
   width: 100px;
