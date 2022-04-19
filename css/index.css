@@ -8,7 +8,6 @@ html{
 }
 body{
     font-family: 'Gothic A1','Nanum Myeongjo','Oswald', sans-serif;
-    overflow-x:hidden;
 }
 
 
@@ -20,9 +19,12 @@ ul{
   font-size: 0;
   text-align: center;
   float: right;
-  margin-right: 10px;
+  
 }
 
+li{
+    cursor: pointer;
+}
 
 .wrap{
     display: flex;
@@ -44,10 +46,12 @@ ul{
 }
 
 #sub-menu{
-   margin-top: 20px;
+    margin-top:250px;
+   
 }
 
 #sub-menu li{
+    padding: 10px;
     
 }
 
@@ -60,7 +64,7 @@ ul{
 #top-menu li{
     list-style: none;
     display:inline-block;
-    padding: 20px;
+    margin-right: 20px;
     font-size: 25px;
     font-family: 'Oswald';
 }
@@ -78,7 +82,9 @@ ul{
 #top-menu{
     width: 100%;
     height: 80px;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: fixed;
     z-index: 9999;
     color: white;
@@ -228,7 +234,6 @@ ul{
 }
 
 .swiper-pagination{
-
    font-weight: bold;
 }
 
@@ -242,6 +247,7 @@ ul{
 
 .more-box div{
     width: 90%;
+
 }
 
 
@@ -363,14 +369,13 @@ ul{
     }
 
  
-
     .skill-box{
         width: 100%;
     }
 }
 
 #font-menu li:hover #sub-menu{
-    display: block;
+    display: inline-block;
 }
 
 @media (max-width: 1023px){
