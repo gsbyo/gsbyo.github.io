@@ -370,6 +370,11 @@ ul{
     .slick-prev{
         margin-left: -400px;
     }
+    
+    
+    .skill-box{
+        width: 100%;
+    }
 }
 
 #font-menu li:hover #sub-menu{
