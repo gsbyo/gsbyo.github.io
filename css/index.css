@@ -224,12 +224,12 @@ li{
 
 .swiper-wrapper div{
     width: 100%;
+    height:600px;
 }
 
 .swiper-wrapper div img{
     width: 100%;
-    height: 600px;
-    padding: 15px;
+    height: 100%;
 }
 
 .swiper-pagination{
