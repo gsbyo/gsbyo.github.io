@@ -172,10 +172,12 @@
                     </div>
                     <div class="more-box">
                         <div>
-                        <p>Node.js / ejs / Mongoose 사용하여 만든 게시판 입니다. </p>
-                        <p>추가적으로 Laravel / PHP / Mysql 사용하여 만든 게시판도 있습니다. </p>
+                        <p>( Node.js / ejs / Mongoose ) or ( Laravel / PHP / Mysql ) 사용하여 만든 게시판 입니다. </p>
                         <p>oauth 를 테스트하기 위해 네이버 로그인을 활용하였습니다. </p>
                         <p>현재는 글쓰기, 댓글, 조회수, 검색의 기능만 있습니다.</p>
+                        <p>글쓰기의 경우 summereditor를 사용하여 사용자가 입력할 수 있게 구현하였으며 이미지를 업로드의 경우 에디터에 이미지를 등록할 때 서버에 이미지가 저장되며
+                           서버는 이미지를 저장 한 후 지정되어있는 이미지 경로와 이름을 리턴하여 게시판에 보여지게 됩니다.
+                        </p>
                         <p>검색은 한번에 검색 할 수 있는 게시글의 양이 한정되어있으며 다음검색을 통해서 검색 범위를 넓힐 수 있습니다.</p>
                         <p style="font-size: 13px; opacity: 0.75;">* 게시글에서 검색이 한번에 되지 않기 때문에 여러번 다음검색을 해야합니다.</p>
                         <p>깃허브 (Node) - <a href="https://github.com/gsbyo/nodeTest">https://github.com/gsbyo/nodeTest</a></p>
@@ -202,6 +204,7 @@
                 <div class="more-box">
                     <div>
                     <p>Node.js / React / Mongodb 를 사용하여 만든 데모 쇼핑몰 입니다.</p>
+                    <p>passport를 사용하여 유저에게 세션 쿠키를 부여하며 해당 쿠키를 통해서 DB의 유저 테이블의 데이터를 조회하여 로그인과 권한을 구현하였습니다. </p>
                     <p>상품관리 / 상품 상세페이지 / 장바구니 / 상품 리스트 정도만 구현되어 있습니다. (회원가입 - 결제 시스템 등 구현 X)</p>
                     <p>관리자 페이지를 통해 상품 / 재고를 등록 - 수정 - 삭제 할 수 있습니다.</p>
                     <p>상품 클릭 시에는 상세페이지로 이동하며 해당 상품을 장바구니에 추가할 수 있습니다. </p>
@@ -210,14 +213,11 @@
                     </div>
                 </div>
             </div>
-            <h3 style="text-align: left; margin: 0 auto; width: 1100px; margin-bottom: 10px;">3. 회원관리 시스템</h3>
+            <h3 style="text-align: left; margin: 0 auto; width: 1100px; margin-bottom: 10px;">3. Voard (Video Board) </h3>
             <div class="project-box">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./img/메인.JPG"></div>
-                        <div class="swiper-slide"><img src="./img/회원.JPG"></div>
-                        <div class="swiper-slide"><img src="./img/회원권.JPG"></div>
-                        <div class="swiper-slide"><img src="./img/정산.JPG"></div>
+                        <div class="swiper-slide"><img src="./img/voard.PNG"></div>
                     </div>
                     <div class="swiper-button-next"><a style="color: black;">&#129146</a></div>
                     <div class="swiper-button-prev"><a style="color: black;">&#129144</a></div>
@@ -227,15 +227,14 @@
                 </div>
                 <div class="more-box">
                     <div>
-                    <p>SpringBoot / jpa / mysql 사용한 회원 관리 프로그램 입니다.</p>
-                    <p>회원을 등록하거나 수정 / 삭제를 할 수 있습니다.</p>
-                    <p>해당 회원에 대하여 등록된 회원권을 결제 할 수 있습니다.</p>
-                    <p>검색 된 회원을 클릭 시 결제 내역을 알 수 있으며 결제내역을 취소하거나 환불을 할 수 있습니다.</p>
-                    <p style="font-size: 13px; opacity: 0.75;">* 환불의 경우 해당 결제의 만료일이 당일로 변경되며 환불 Entity가 생성됩니다. </p>
-                    <p>회원권을 등록 할 수 있습니다.</p>
-                    <p>결제 내역과 환불 내역을 추출하여 정산된 결과를 볼 수 있습니다. </p>
-                    <p style="font-size: 13px; opacity: 0.75;">* 월(month)에 해당되는 데이터가 없는 경우 0으로 산출됩니다.</p>
-                    <p>깃허브 - <a href="https://github.com/gsbyo/jpaTest">https://github.com/gsbyo/jpaTest</a></p>
+                    <p>SpringBoot / JPA / QueryDsl 활용하여 만든 유튜브 링크 저장 게시판 입니다. (Video Board)</p>
+                    <p>로그인과 회원가입은 SpringSecurity를 활용하여 구현하였으며 유저 테이블의 Column(Role)에 따라서 권한을 부여하였습니다. </p>
+                    <p>링크를 input 창에 입력하고 추가 버튼을 누르게 되면 카테고리 / 완료 / 취소와 같은 3개의 버튼과 입력한 Youtube 영상이 생성됩니다. </p>
+                    <p>그 이후 카테고리를 설정 후 완료창을 누르게 되면 DB에 저장되게 됩니다. </p>
+                    <p>페이징의 경우 Intersection Observer를 사용하여 무한스크롤 형식으로 구현하였으며 자바스크립트의 page 변수에 따라서 ajax로 데이터를 요청하며, 데이터가 없는 경우
+                      Observer target이 노출되더라도 데이터를 요청하지 않습니다. </p>
+                    <p>페이징 쿼리는 offset과 skip을 사용하여 데이터를 불러오고 있습니다. </p>
+                    <p>깃허브 - <a href="https://github.com/gsbyo/Voard">https://github.com/gsbyo/Voard</a></p>
                 </div>
                 </div>
             </div>
